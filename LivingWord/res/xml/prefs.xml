@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:entries="@array/refresh_rates"
+        android:entryValues="@array/refresh_rates_values"
+        android:key="refresh_rates"
+        android:summary="How often should the verses change?"
+        android:title="Refresh Rate" />
+
+    <PreferenceScreen
+        android:key="topics"
+        android:persistent="true"
+        android:title="Topics" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="topic_encouragement"
+            android:title="Encouragement" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="topic_god"
+            android:title="God" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="topic_daily_living"
+            android:title="Daily Living" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="topic_temptation"
+            android:title="Fighting Temptation" />
+    </PreferenceScreen>
+
+</PreferenceScreen>
